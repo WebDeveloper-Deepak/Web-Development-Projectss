@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    margin: 2em;
+}
+
+#add-habit {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+#habit-name {
+    padding: 0.5em;
+    margin-right: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-habit-button {
+    padding: 0.5em 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#habit-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#habit-list li {
+    background-color: white;
+    padding: 1em;
+    margin: 0.5em 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.habit-actions {
+    display: flex;
+    gap: 0.5em;
+}
+
+.habit-actions button {
+    padding: 0.2em 0.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #ffa500;
+    color: white;
+}
+
+.delete-button {
+    background-color: #ff0000;
+    color: white;
+}
+
+#calendar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.day {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.completed {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#motivation {
+    text-align: center;
+    margin-top: 2em;
+}
+
+#motivational-message {
+    font-size: 1.2em;
+    color: #555;
+}
