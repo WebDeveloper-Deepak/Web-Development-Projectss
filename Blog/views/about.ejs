@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+
+<h1>BLOGS</h1>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://picsum.photos/200/150" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><%= locals.Title %></h5>
+    <p class="card-text"><%= locals.Sub %></p>
+    <a href="/view-blog" type="button" class="btn btn-primary">View Blog</a>
+  </div>
+</div>
+
+
+<%- include("partials/footer.ejs") %>
