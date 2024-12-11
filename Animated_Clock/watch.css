@@ -193,3 +193,93 @@
     transform: rotate(360deg);
   }
 }
+
+/* New Timezone selector */
+.timezone-selector {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #dbe7fd;
+}
+
+.timezone-selector select {
+  padding: 5px 10px;
+  font-size: 16px;
+  background: #1e213a;
+  color: #dbe7fd;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+/* Manual Time Adjustment */
+.manual-time {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 16px;
+  color: #dbe7fd;
+}
+
+.manual-time label {
+  margin: 0 5px;
+}
+
+.manual-time input {
+  width: 50px;
+  padding: 5px;
+  font-size: 16px;
+  margin: 0 5px;
+  background: #1e213a;
+  color: #dbe7fd;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.manual-time button {
+  padding: 5px 15px;
+  font-size: 16px;
+  background: #07f3dfb4;
+  color: #25283D;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.manual-time button:hover {
+  background: #05c1b2;
+}
+
+/* Customizable Clock Face */
+/* Clock Face Options */
+.clock-face-options {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 16px;
+  color: #dbe7fd;
+}
+
+.clock-face-options label {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/* Clock Themes */
+.original #clock {
+  border-color: #1e213a;
+  box-shadow: inset 0 5px 25px #00000080,
+              0 5px 25px #00000080,
+              0 5px 30px #00000080;
+}
+
+.neon #clock {
+  border-color: #07f3dfb4;
+  box-shadow: inset 0 5px 15px #07f3df80,
+              0 5px 20px #07f3df80;
+}
+
+.negative #clock {
+  border-color: #c7d8f8;
+  box-shadow: none;
+  background: #ffffff;
+}
+

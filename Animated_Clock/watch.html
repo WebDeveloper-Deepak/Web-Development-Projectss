@@ -29,5 +29,44 @@
             <li id="second"></li>
         </ul>
     </div>
+    <!-- Adding ability to change timezone -->
+    <div class="timezone-selector">
+        <label for="timezoneSelector">Select Timezone:</label>
+        <select id="timezoneSelector">
+            <option value="UTC">UTC</option>
+            <option value="America/New_York">New York (EST)</option>
+            <option value="Europe/London">London (GMT)</option>
+            <option value="Asia/Tokyo">Tokyo (JST)</option>
+            <option value="Australia/Sydney">Sydney (AEST)</option>
+        </select>
+    </div>
+    <!-- Adding ability to manually change time -->
+    <div class="manual-time">
+        <label for="hoursInput">Hours:</label>
+        <input type="number" id="hoursInput" min="1" max="12" placeholder="HH">
+        
+        <label for="minutesInput">Minutes:</label>
+        <input type="number" id="minutesInput" min="0" max="59" placeholder="MM">
+        
+        <label for="secondsInput">Seconds:</label>
+        <input type="number" id="secondsInput" min="0" max="59" placeholder="SS">
+        
+        <button id="setTimeButton">Set Time</button>
+    </div>
+    <!-- Adding ability to customize clockface -->
+    <div class="clock-face-options">
+        <label>
+            <input type="radio" name="clockFace" value="original" checked> Original
+        </label>
+        <label>
+            <input type="radio" name="clockFace" value="neon"> Neon
+        </label>
+        <label>
+            <input type="radio" name="clockFace" value="negative"> Negative
+        </label>
+    </div>
+    
+    <!-- Adding JS to implement new contributions --> 
+    <script src="watch.js"></script>   
 </body>
 </html>

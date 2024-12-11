@@ -1,15 +1,20 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-#game{
+body {
+    background: white; /* Initial Background Color */
+    transition: background 1s ease-in-out; /* Smooth Transition for Levels */
+}
+#game {
     width: 400px;
     height: 500px;
     border: 1px solid black;
     margin: auto;
     overflow: hidden;
+    position: relative;
 }
-#character{
+#character {
     width: 20px;
     height: 20px;
     background-color: red;
@@ -19,7 +24,7 @@
     left: 190px;
     z-index: 1000000;
 }
-.block{
+.block {
     width: 400px;
     height: 20px;
     background-color: black;
@@ -27,7 +32,7 @@
     top: 100px;
     margin-top: -20px;
 }
-.hole{
+.hole {
     width: 40px;
     height: 20px;
     background-color: white;
@@ -35,3 +40,32 @@
     top: 100px;
     margin-top: -20px;
 }
+#level-display {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+#score-display {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+    color: black;
+}
+#level-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: none; /* Hidden by default */
+    z-index: 999;
+    text-align: center;
+}
+
